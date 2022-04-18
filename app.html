@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./app.css" />
+</head>
+
+<body>
+    <!-- Rating state start -->
+    <div class="wrapper-row">
+        <div class="container-row" id="container-row">
+            <div class="star-icon">
+                <img src="./images/icon-star.svg" alt="" />
+            </div>
+            <div class="title-header">
+                <h1><strong>How did we do?</strong></h1>
+            </div>
+            <div class="txt-comment">
+                <p>
+                    Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!
+                </p>
+            </div>
+            <div class="btn-rate-number" id="btn-rate-number">
+                <button class="btn active" id="btn" onchange="textstate()">1</button>
+                <button class="btn active" id="btn" onchange="textstate()">2</button>
+                <button class="btn active" id="btn" onchange="textstate()">3</button>
+                <button class="btn active" id="btn" onchange="textstate()">4</button>
+                <button class="btn active" id="btn" onchange="textstate()">5</button>
+            </div>
+            <div class="btn-submit" id="btn-submit">
+                <button>submit</button>
+            </div>
+        </div>
+        <!-- Rating state end -->
+        <!-- Thank you state start -->
+        <div class="thankyou-state" id="show">
+            <div class="image-rate">
+                <img src="./images/illustration-thank-you.svg" alt="">
+            </div>
+            <div class="rate-innerHTML">
+                <p>You selected <span id="id-selected-btn">?</span> out of 5</p>
+            </div>
+            <h1>
+                Thank you!
+            </h1>
+            <div class="text-desc">
+                <p> We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+            </div>
+        </div>
+        <!-- Thank you state end -->
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Benjie Silvano</a>.
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>

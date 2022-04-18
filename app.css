@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* color */
+    --orange: hsl(25, 97%, 53%);
+    /* --neutral:; */
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --font-family-overpass: 'Overpass', sans-serif;
+    --font-weight-400: 400;
+    --font-weight-700: 700;
+    --font-size: 15px;
+    --transparent-color-background-color: hsl(215, 23%, 14%);
+}
+
+body {
+    background-color: var(--very-dark-blue);
+}
+
+.wrapper-row {
+    width: 409px;
+    height: 416px;
+    background-color: var(--transparent-color-background-color);
+    border-radius: 29px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 34px;
+}
+
+.star-icon {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 46px;
+    height: 46px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-header {
+    margin-top: 36px;
+}
+
+.title-header h1 {
+    color: var(--white);
+    font-family: var(--font-family-overpass);
+    font-weight: var(--font-weight-700);
+}
+
+.txt-comment p {
+    margin-top: 26px;
+    color: var(--medium-grey);
+    font-family: var(--font-family-overpass);
+    font-size: var(--font-size);
+}
+
+.btn-rate-number {
+    margin-top: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+}
+
+.btn-rate-number button:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--white);
+    border: none;
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+    font-family: var(--font-family-overpass);
+    font-weight: var(--font-weight-700);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-rate-number button:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--white);
+    border: none;
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+    font-family: var(--font-family-overpass);
+    font-weight: var(--font-weight-700);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-rate-number button:nth-child(3) {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--white);
+    border: none;
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+    font-family: var(--font-family-overpass);
+    font-weight: var(--font-weight-700);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-rate-number button:nth-child(4) {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--white);
+    border: none;
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+    font-family: var(--font-family-overpass);
+    font-weight: var(--font-weight-700);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-rate-number button:nth-child(5) {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--white);
+    border: none;
+    width: 49px;
+    height: 49px;
+    border-radius: 50px;
+    font-family: var(--font-family-overpass);
+    font-weight: var(--font-weight-700);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-rate-number button:hover:nth-child(1) {
+    background-color: var(--orange);
+}
+
+.btn-rate-number button:hover:nth-child(2) {
+    background-color: var(--orange);
+}
+
+.btn-rate-number button:hover:nth-child(3) {
+    background-color: var(--orange);
+}
+
+.btn-rate-number button:hover:nth-child(4) {
+    background-color: var(--orange);
+}
+
+.btn-rate-number button:hover:nth-child(5) {
+    background-color: var(--orange);
+}
+
+.btn-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 33px;
+}
+
+.btn-submit button {
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    font-family: var(--font-family-overpass);
+    text-transform: capitalize;
+    font-weight: var(--font-weight-700);
+    background-color: var(--orange);
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit button:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.btn-rate-number button.active:focus {
+    background-color: var(--medium-grey);
+}
+
+
+/* .container-row {
+    display: none;
+} */
+
+.thankyou-state {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rate-innerHTML {
+    margin-top: 31px;
+}
+
+.rate-innerHTML p {
+    color: var(--orange);
+    background-color: var(--dark-blue);
+    width: 192px;
+    height: 32px;
+    font-family: var(--font-family-overpass);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 27px;
+}
+
+.thankyou-state h1 {
+    color: white;
+    font-family: var(--font-family-overpass);
+    margin-top: 38px;
+    font-weight: var(--font-weight-400);
+}
+
+.thankyou-state .text-desc p {
+    color: var(--medium-grey);
+    font-family: var(--font-family-overpass);
+    text-align: center;
+    font-size: var(--font-size);
+    margin-top: 19px;
+}
+
+.attribution {
+    font-family: var(--font-family-overpass);
+    font-size: 11px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.attribution a {
+    font-family: var(--font-family-overpass);
+    color: hsl(228, 45%, 44%);
+}
